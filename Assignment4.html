@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Assignment 4</title>
+</head>
+<body>
+	<textarea id="ta1"></textarea>
+	<p id="cords">
+	</p>
+	<script type="text/javascript">
+		var ta=document.getElementById("ta1");
+		ta.onmousemove=function(event) {
+		 	var now = new Date();
+		    var x = event.clientX;
+		    var y = event.clientY;
+		    var coords = "X coords: " + x + ", Y coords: " + y+", time: "+now;
+		    document.getElementById("cords").innerHTML = coords;
+		}
+</script>
+	
+</script>
+
+</body>
+</html>
